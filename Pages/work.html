@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+
+	<link rel="stylesheet" href="../Styles/stil.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</HEAD>
+<BODY>
+	
+	
+	<ul class="nav">
+		<li><a href="../index.html"> Home </a></li>
+		<li><a href="about.html"> About </a></li>
+		<li><a href="galery.html"> Galery </a></li>
+		<li><a href="contact.html"> Contact </a></li>
+		<li><a href="#"> Work </a></li>
+	</ul>
+	
+	<div id="media">
+		<div id="commercial">
+			<h1>COMMERCIAL</h1>
+			<p>Commercial videos for popular company.<br> (click on logo to watch video)</p>
+			<a href="https://www.youtube.com/watch?v=pUiUdHbFSiU">
+ 			<img class="work" src="../Images/commercial1.jpg"></a>
+			<a href="https://www.youtube.com/watch?v=9jyPgU2USBg"><img class="work" src="../Images/commercial3.jpg"></a>
+			<a href="https://www.youtube.com/watch?v=wumodpg2gcE"><img class="work" src="../Images/commercial2.jpg"></a>
+			<img class="workB" src="../Images/commercial11.jpg">
+			<img class="workB" src="../Images/commercial12.jpg">
+		</div>
+		<div id="photo">
+			<h1>PHOTO</h1>
+			<p>Photoshooting for popular company.<br> I was main face of Ceasar's</p>
+			<img class="workB" src="../Images/commercial21.jpg">
+			<img class="workB" src="../Images/commercial22.jpg">
+		</div>
+		<div id="music">
+			<h1>MUSIC</h1>
+			<p>Music videos for Bosnian popular singers. Mirza Selimovic, Neno Muric, Mirza Soljanin, Amra Halebic</p>
+			<img class="workB" src="../Images/commercial31.jpg">
+		</div>
+	</div>	
+	
+<script >
+var windowWidth = $(window).width();
+
+$('.page-container').mousemove(function(event) {
+
+	var moveX = (($(window).width() / 2) - event.pageX) * 0.05;
+	var moveY = (($(window).height() /2) - event.pageY) * 0.05;
+	$('.page-back').css('margin-left', moveX + 'px');
+	$('.page-back').css('margin-top', moveY + 'px');
+	});
+
+</script>
+	
+ 
+</BODY>
+</HTML>
