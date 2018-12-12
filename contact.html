@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+
+	<link rel="stylesheet" href="stil.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</HEAD>
+<BODY>
+	<div class="page-container">
+		
+		
+		<div class="page-back"></div>
+		<ul class="nav">
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="about.html"> About </a></li>
+	<li><a href="search.html"> Galery </a></li>
+	<li><a href="contact.html"> Contact </a></li>
+	<li><a href="work.html"> Work </a></li>
+	</ul>
+		<div id="map" ></div>	
+		<div id="kon">
+		<p class="br"> Sarajevo, Bosna i Hercegovina </p>
+		<p class="br"> +111/222-121 </p> <br>
+		<p class="br"> Sarajevo, Bosna i Hercegovina </p>
+		<p class="br"> +111/222-121 </p> <br>
+		<p class="br"> Sarajevo, Bosna i Hercegovina </p>
+		<p class="br"> +111/222-121 </p> <br> <br>
+		<p class="br"> email@ezez.com </p> 
+		<p class="br"> email@ezez.com </p> 
+			
+		</div>
+		<div id="k"> 
+		<p class="brr"> ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez </p>
+		<p class="brr"> ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez </p>
+		<p class="brr"> ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez </p>
+		<p class="brr"> ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez ez </p>
+		</div>
+	
+<script >
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('nestaje').style.display='block'; 
+	 var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+	
+
+}, false);
+
+
+var windowWidth = $(window).width();
+
+$('.page-container').mousemove(function(event) {
+
+var moveX = (($(window).width() / 2) - event.pageX) * 0.05;
+var moveY = (($(window).height() /2) - event.pageY) * 0.05;
+$('.page-back').css('margin-left', moveX + 'px');
+$('.page-back').css('margin-top', moveY + 'px');
+});
+
+</script>
+	
+ 
+</BODY>
+</HTML>

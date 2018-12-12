@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<HEAD>
+
+	<link rel="stylesheet" href="stil.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</HEAD>
+<BODY>
+	<div class="page-container">
+		<div class="page-back">	</div>
+
+
+ 		<div id="bio">
+ 			<div id="bioPic"></div>
+ 			<div id="bioText">BLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DASBLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DASBLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DASBLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DASBLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DASBLAAAAAAAAA  SAJDNANDMSNADKJASNDKJASND
+ 			DAJDNSADKJ
+ 		SADJASNDASJ SDAD ASD SADSA DAS DAS</div>
+ 		</div>
+		<ul class="nav">
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="about.html"> About </a></li>
+	<li><a href="search.html"> Galery </a></li>
+	<li><a href="contact.html"> Contact </a></li>
+	<li><a href="work.html"> Work </a></li>
+	
+
+
+
+
+<script >
+
+
+var windowWidth = $(window).width();
+
+$('.page-container').mousemove(function(event) {
+
+var moveX = (($(window).width() / 2) - event.pageX) * 0.05;
+var moveY = (($(window).height() /2) - event.pageY) * 0.05;
+$('.page-back').css('margin-left', moveX + 'px');
+$('.page-back').css('margin-top', moveY + 'px');
+});
+
+</script>
+	
+ 
+</BODY>
+</HTML>
